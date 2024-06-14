@@ -4,108 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <link rel="stylesheet" type="text/css"href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<!--Navigasi-->
-<div class="navigasi"> 
-    <div class="logo">
-        <h2>CM</h2>
+    <!-- Form Login -->
+    <div class="login-container" id="login-section">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message" style="color:red; display:none;">Nama atau kata sandi salah!</p>
     </div>
 
-    <div class="menu">
-        <ul>
-            <li><a href="#Hello">Hello</a></li>
-            <li><a href="#pendidikan">Pendidikan</a></li>
-            <li><a href="#Softskill">Softskill</a></li>
-            <li><a href="#Kontak">Kontak</a></li>
-            
-        </ul>
-    </div>
-</div>
+    <!-- Bagian Portofolio -->
+    <div id="portfolio-section" style="display:none;">
+        <!-- Navigasi -->
+        <div class="navigasi">
+            <div class="logo">
+                <h2>CM</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#hello">Hello</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#softskill">Softskill</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
 
-<!-- Banner -->
-<div class="banner" id="Hello">
-    <img src="gambar/aku.jpg  ">     
-    <h1>Hello... <span></span></h1>
-    <p>Welcome to my web developer portfolio! i'm Cindra, <br>a skilled and creative web developer with a passion for creating beautiful,responsive,and user-freandly website. </p>
+        <!-- Banner -->
+        <div class="banner" id="hello">
+            <img src="gambar/aku.jpg" alt="Foto Profil">
+            <h1>Hello... <span></span></h1>
+            <p>Welcome to my web developer portfolio! I'm Cindra, <br>a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites.</p>
+            <a href="#"><button>Selengkapnya</button></a>
+        </div>
 
-    <a href=""><button>Selengkapnya</button></a>
-</div>
+        <!--  Riwayat Pendidikan -->
+        <div class="box-pendidikan" id="pendidikan">
+            <h1>Riwayat Pendidikan</h1>
+            <div class="box-kiri">
+                <img src="gambar/ICON SD.png" alt="Sekolah Dasar">
+                <h3>Sekolah Dasar</h3>
+                <p>Saya bersekolah dasar di SDN Toraut, Bolaang Mongondow, Dumoga Barat-Sulawesi Utara.</p>
+            </div>
+            <div class="box-tengah">
+                <img src="gambar/ICON SMP.png" alt="Sekolah Menengah Pertama">
+                <h3>Sekolah Menengah Pertama</h3>
+                <p>Saya di Mts Al-Ikhwan di Kecamatan Dumoga Barat, Bolaang Mongondow-Sulawesi Utara.</p>
+            </div>
+            <div class="box-kanan">
+                <img src="gambar/ICON SMA.png" alt="Sekolah Menengah Kejuruan">
+                <h3>Sekolah Menengah Kejuruan</h3>
+                <p>Saya bersekolah di SMK Negeri 1 Gorontalo, Kecamatan Sipatan, Kota Gorontalo-Gorontalo.</p>
+            </div>
+        </div>
 
-<!-- ini pendidikan -->
+        <!-- Softskill -->
+        <div class="box-softskill" id="softskill">
+            <h1>Softskill-ku</h1>
+            <div class="box-kiri">
+                <img src="gambar/seo.jpg" alt="SEO Optimization">
+                <h3>SEO Optimization</h3>
+                <p>SEO adalah upaya mengoptimasi website untuk mendapatkan peringkat teratas di hasil pencarian. Dengan mendapatkan ranking tinggi di hasil pencarian, potensi trafik organik Anda pun meningkat.</p>
+            </div>
+            <div class="box-tengah">
+                <img src="gambar/app.jpg" alt="App Development">
+                <h3>App Development</h3>
+                <p>Development adalah salah satu tipe proyek IT yang berfokus pada penciptaan atau pengembangan perangkat lunak. Software development dapat didetailkan lagi menjadi proses.</p>
+            </div>
+            <div class="box-kanan">
+                <img src="gambar/webdesign.jpg" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Web Design adalah suatu kegiatan yang bertujuan untuk merancang aplikasi dan tampilannya dengan basis web menggunakan bahasa pemrograman.</p>
+            </div>
+        </div>
 
-<div class="box-pendidikan" id ="Pendidikan">
-    <h1>Riwayat Pendidikan</h1>
+        <!-- Kontak Pemilik -->
+        <div class="box-kontak" id="kontak">
+            <h1>Kontak</h1>
+            <img src="gambar/call.jpg" alt="Kontak">
+            <h2>082518053211</h2>
+        </div>
 
-    <div class="box-kiri">
-        <img src="gambar/ICON SD.png">
-        <p><h3>Sekolah Dasar</h3></p>
-        <p>Saya bersekolah dasar di SDN
-            Toraut,Bolaang Mongondow,Dumoga Barat-Sulawesi Utara
-        </p>
-    </div>
-
-    <div class="box-tengah">
-        <img src="gambar/ICON SMP.png">
-        <p><h3>Sekolah Menengah Pertama</h3></p>
-        <p>Saya di Mts Al-Ikhwan di Kecamatan Dumoga Barat,
-            Bolaang Mongondow-Sulawesi Utara
-        </p>
-    </div>
-
-    <div class="box-kanan">
-        <img src="gambar/ICON SMA.png">
-        <p><h3>Sekolah Menengah Kejuruan</h3></p>
-        <p>Saya bersekolah di SMK Negeri 1 Gorontalo,Kecamatan Sipatan,
-         Kota Gorontalo-Gorontalo</p>
-    </div>
-
-
-</div>
-
-<!-- ini softskill -->
-<div class="box-softskill" id ="Softskill">
-    <h1>Softskill-ku</h1>
-
-    <div class="box-kiri">
-        <img src="gambar/seo.jpg">
-        <p><h3>SEO Optimization</h3></p>
-        <p>SEO adalah upaya mengoptimasi website untuk mendapatkan
-            peringkat teratas di hasil pencarian.Dengan mendapatka 
-            ranking tinggi di hasl pencarian, potensi trafik organik
-            anda pun meningkat
-        </p>
-    </div>
-
-    <div class="box-tengah">
-        <img src="gambar/app.jpg">
-        <p><h3>App Development</h3></p>
-        <p>Development adalah salah satu tipe proyek IT yang berfokus 
-           pada penciptaan atau pengembangan perangkat lunak. Software 
-           development dapat di detailkan lagi menjadi proses.
-        </p>
-    </div>
-
-    <div class="box-kanan">
-        <img src="gambar/webdesign.jpg">
-        <p><h3>Web Design</h3></p>
-        <p>Web Desain adalah salah suatu kegiatan yang bertujuan untuk 
-           merancang aplikasi dan tampilannya dengan basis web menggunakan
-           bahasa pemrograman.
-        </p>
+        <!-- Footer -->
+        <div class="footer">
+            <p>Copyright: Cindrawati Mokoagow | 2300018288 | kelas G</p>
+        </div>
     </div>
 
-    <div class="box-kontak" id = "Kontak">
-        <h1>Kontak</h1>
-        <img src="gambar/call.jpg">
-        <h2>082518053211</h2>
-    </div>
+    <!-- JavaScript untuk Validasi -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
 
-    <div class="footer">
-      <p>Copyright : Cindrawati Mokoagow | 2300018288 | kelas G</p>
-    </div>
-
+            // Validasi sederhana (Ganti Password)
+            if (name === 'Cindra' && password === 'informatika23') {
+                document.getElementById('login-section').style.display = 'none';
+                document.getElementById('portfolio-section').style.display = 'block';
+            } else {
+                document.getElementById('error-message').style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>

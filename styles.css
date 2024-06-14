@@ -1,3 +1,53 @@
+/* Gaya Umum */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+/* Gaya untuk form login */
+.login-container {
+    background-color: rgb(213, 135, 135);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin: 200px auto;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6c5757;
+    border-radius: 10px;
+}
+
+.login-container button {
+    width: 90%;
+    padding: 10px;
+    background-color: #a95f7f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #a5828e;
+}
+
 * {
     margin: 0;
     padding: 0; 
@@ -146,17 +196,15 @@ h1 span:before{
 
 .box-kontak img{
     width: 150px;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-bottom: 20px;
 
 }
 
-.box-softskill .box-kontak h1{ 
+.box-kontak { 
     text-align: center;
     color: #4d4d4d;
-    padding-top: 100px;
-    margin: 0px auto;
-    margin-top: 500px;
+    margin-top: 7dvh;
 }
 
 .footer {
@@ -167,11 +215,3 @@ h1 span:before{
     padding: 3px;
     margin: 50px auto 0px;
 }
-
-
-
-
-
-
-
-
